@@ -1,0 +1,25 @@
+<section class="details" *ngFor="let item of bikeList">
+  <div class="details__item" *ngIf="item.id == index">
+    <div *ngIf="options && layers" style="height: 400px; width: 100%" leaflet [leafletOptions]="options"
+         [leafletLayers]="layers"></div>
+    <div class="details__box-header">
+      <h3>{{item.properties.label}}</h3>
+      <span>{{distance}} m</span>
+      <span></span>
+    </div>
+    <div class="details__box-content">
+      <ul class="list">
+        <li class="list__item">
+          <span class="fas fa-bicycle"></span>
+          <span class="list__desc">Available bikes</span>
+          <p class="list__bikes">{{item.properties.bikes}}</p>
+        </li>
+        <li class="list__item">
+          <span class="fas fa-unlock"></span>
+          <span class="list__desc">Available places</span>
+          <p class="list__places">{{item.properties.free_racks}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

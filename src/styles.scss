@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+//Bootstrap 4
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+
+// Angular matetial dependencies.
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// FontAwesome 5.0 for more icons support
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__desc {
+    font-size: .8em;
+    color: #c1bbbb;
+  }
+
+  &__bikes {
+    font-size: 2em;
+    color: #6cb773;
+  }
+
+  &__places {
+    font-size: 2em;
+  }
+}

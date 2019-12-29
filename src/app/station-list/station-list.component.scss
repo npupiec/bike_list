@@ -1,0 +1,16 @@
+.station {
+  &__list {
+    &-boxes {
+        margin-top: 2em;
+    }
+
+    &-details {
+      @media (min-width: 768px) {
+        position: fixed;
+        width: 35vw;
+      }
+
+      margin-top: 2em;
+    }
+  }
+}

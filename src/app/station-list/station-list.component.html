@@ -1,0 +1,16 @@
+<section class="station__list">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="station__list-details">
+          <app-details [bikeList]="bikeList" [index]="index" [lang]="lang" [long]="long" [bikes]="bikes"></app-details>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="station__list-boxes">
+          <app-list [bikeList]="bikeList" (index)="getId($event)"></app-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

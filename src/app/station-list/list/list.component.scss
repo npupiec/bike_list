@@ -1,0 +1,18 @@
+.station {
+  &__list {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__box {
+    padding: 1em;
+
+    &:hover {
+      background-color: #c1bbbb;
+      transition: .3s;
+      cursor: pointer;
+    }
+  }
+}
